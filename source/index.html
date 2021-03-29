@@ -8,12 +8,12 @@
 
 <body class="body">
   <header class="header">
+    <a class="header__logo"></a>
     <nav class="nav">
       <button class="nav__toggle nav__toggle--closed nav__toggle--nojs" type="button"
         aria-label="Открыть меню"></button>
       <div class="nav-list">
-        <a class="nav-list__item nav-list__item--active" href="index.html"></a>
-        <a class="nav-list__item" href="index.html">Главная</a>
+        <a class="nav-list__item nav-list__item--active" href="index.html">Главная</a>
         <a class="nav-list__item" href="catalog.html">Каталог продукции</a>
         <a class="nav-list__item" href="form.html">Подбор программы</a>
       </div>
@@ -22,11 +22,11 @@
 
   <main class="main">
     <section class="hero">
-      <div class="container">
+      <div class="container"> <!-- или центровка или отступы? 1.вьюпорт упрется в брейкпоинт, то контент прижмется к границам экрана. 2.если padding, то будет отступ от контента до краев экрана  -->
         <div class="hero__inner">
           <h1 class="hero__title">Функциональное питание для котов</h1>
           <p class="hero__subtitle">Занялся собой? Займись котом!</p>
-          <a class="btn" href="form.html">Подобрать программу</a>
+          <a class="button" href="form.html">Подобрать программу</a>
         </div>
       </div>
     </section>
@@ -51,13 +51,15 @@
     </section>
 
     <section class="advantages">
-      <h2 class="advantages__title">Как это работает</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">Функциональное питание содержит только полезные питательные вещества.</li>
-        <li class="advantages__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-        <li class="advantages__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
-        <li class="advantages__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
-      </ul>
+      <div class="container">
+        <h2 class="advantages__title">Как это работает</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">Функциональное питание содержит только полезные питательные вещества.</li>
+          <li class="advantages__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+          <li class="advantages__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
+          <li class="advantages__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+        </ul>
+      </div>
     </section>
 
     <section class="example">
@@ -66,6 +68,22 @@
         <p class="example__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
           16 часов в день.</p>
+        <div class="example-result">
+          <div class="example-result__item">
+            <p class="example-result__info">5 кг</p>
+          </div>
+          <div class="example-result__item">
+            <p class="example-result__info">60 дней</p>
+          </div>
+          <p class="example-result__costs">Затраты на питание:<span class="example-result__costs-amount">15 000
+              руб.</span></p>
+        </div>
+        <div class="example__slider">
+          <div class="example__slider-controls">
+            <button>Было</button>
+            <button>Стало</button>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -73,13 +91,24 @@
   <section class="map">
     <div class="map__info">
       <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span
-          class="map__address-city">Санкт-Петербург</span></p>
+      <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span class="map__address-city">Санкт-Петербург</span></p>
     </div>
     <div class="map-panel"></div>
   </section>
 
   <footer class="footer">
+    <div class="footer__wrapper">
+      <a class="footer__logo"></a>
+      <div class="social">
+        <a href="social__link"></a>
+        <a href="social__link"></a>
+        <a href="social__link"></a>
+      </div>
+      <div class="copyright">
+        <p class="copyright__text">HTML Academy</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </div>
+    </div>
   </footer>
 </body>
 
