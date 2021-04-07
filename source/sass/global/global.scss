@@ -1,0 +1,18 @@
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-black;
+  background-color: $basic-white;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
