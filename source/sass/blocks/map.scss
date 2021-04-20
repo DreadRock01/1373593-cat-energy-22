@@ -1,0 +1,28 @@
+.map__info {
+  &--inner {
+    background-color: $basic-grey;
+  }
+}
+
+.map__title {
+  @include text;
+  color: $special-black;
+  text-transform: uppercase;
+}
+
+.map__address,
+.map__address-city {
+  font-family: $add-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $special-dark-grey;
+}
+
+.map__panel {
+  iframe {
+    border: none;
+    width: 100%;
+  }
+}
+

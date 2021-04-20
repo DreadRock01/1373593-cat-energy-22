@@ -1,0 +1,27 @@
+.products__title {
+  color: $special-light-black;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+// .products__data {
+//   font-family: $add-font;
+//   color: $special-dark-grey;
+//   font-size: 16px;
+//   line-height: 20px;
+//   font-weight: 400;
+
+//   &--th {
+//     font-weight: 400;
+//   }
+// }
+
+.products__data-cell {
+  font-family: $add-font;
+  color: $special-dark-grey;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}

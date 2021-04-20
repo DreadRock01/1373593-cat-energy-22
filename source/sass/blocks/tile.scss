@@ -1,0 +1,48 @@
+.tile {
+  background-color: $additional-grey;
+}
+
+.tile__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  // @media (min-width: $tablet) {
+  //   font-size: 36px;
+  //   line-height: 36px;
+  // }
+}
+
+.tile__subtitle {
+  @include index-subtitle;
+
+  // @media (min-width: $tablet) {
+  //   color: $basic-black;
+  // }
+}
+
+
+.tile__link {
+  color: $basic-black;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &:active {
+    color: rgba($basic-black, 0.3);
+  }
+
+  &::after {
+    position: absolute;
+    content: "tmp";
+    color: red;
+    width: 32px;
+    height: 10px;
+    background-image: url("");
+    // background-size: 32px 10px;
+    // background-position: right;
+    // background-repeat: no-repeat;
+  }
+}

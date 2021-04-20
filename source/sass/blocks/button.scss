@@ -1,0 +1,40 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $main-font;
+  background-color: $basic-green;
+  color: $basic-white;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 40px;
+  width: 100%;
+
+  &:hover {
+    background-color: $special-green;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
+}
+
+.button--all {
+  color: $basic-black;
+  background-color: $basic-grey;
+
+  &:hover {
+    background-color: $special-grey;
+  }
+
+  &:active {
+    color: $basic-black;
+    opacity: 0.5;
+  }
+}
