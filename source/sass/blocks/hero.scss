@@ -1,0 +1,40 @@
+.hero {
+  color: $basic-white;
+  background-color: $basic-green;
+
+  &--inside {
+    color: $basic-black;
+    background-color: $basic-white;
+  }
+
+  // @media (min-width: $tablet) {
+  //   color: $basic-black;
+  // }
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+
+  // @media (min-width: $tablet) {
+  //   font-size: 60px;
+  //   line-height: 60px;
+  // }
+}
+
+.hero__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  // @media (min-width: $tablet) {
+  //   font-size: 20px;
+  //   line-height: 20px;
+  // }
+
+  &--form {
+    line-height: 18px;
+  }
+}
