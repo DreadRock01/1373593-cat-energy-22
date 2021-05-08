@@ -1,19 +1,52 @@
+@mixin example-title {
+  margin: 0;
+  font-family: $main-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+
+  @media #{$media-md} {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 @mixin text {
+  margin: 0;
   font-family: $main-font;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+
+  @media #{$media-md} {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 @mixin index-subtitle {
+  margin: 0;
   font-family: $add-font;
   color: $special-dark-grey;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
 
-  // @media (min-width: $tablet) {
-  //   font-size: 16px;
-  //   line-height: 24px;
-  // }
+  @media #{$media-md} {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@mixin form-text {
+  text-transform: uppercase;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+
+  @media #{$media-md} {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

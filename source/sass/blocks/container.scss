@@ -1,6 +1,21 @@
 .container {
+  max-width: $mobile;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  // padding-right: 20px;
-  // padding-left: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media #{$media-md} {
+    max-width: none;
+    width: $tablet;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media #{$media-lg} {
+    width: $desktop;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
 }

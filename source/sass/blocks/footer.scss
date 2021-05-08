@@ -1,0 +1,14 @@
+.footer {
+  background-color: $basic-grey;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media #{$media-md} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

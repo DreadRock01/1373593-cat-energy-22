@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
@@ -11,16 +12,18 @@
 
 <body class="body">
   <header class="header">
-    <a class="header__logo">Cat Energy</a>
-    <nav class="nav">
-      <button class="nav__toggle nav__toggle--closed nav__toggle--nojs" type="button"
-        aria-label="Открыть меню"></button>
-      <div class="nav-list">
-        <a class="nav-list__item nav-list__item--active" href="index.html">Главная</a>
-        <a class="nav-list__item" href="catalog.html">Каталог продукции</a>
-        <a class="nav-list__item" href="form.html">Подбор программы</a>
-      </div>
-    </nav>
+    <div class="container">
+      <a class="header__logo">Cat Energy</a>
+      <nav class="nav">
+        <button class="nav__toggle nav__toggle--closed nav__toggle--nojs" type="button"
+          aria-label="Открыть меню"></button>
+        <div class="nav-list">
+          <a class="nav-list__item nav-list__item--active" href="index.html">Главная</a>
+          <a class="nav-list__item" href="catalog.html">Каталог продукции</a>
+          <a class="nav-list__item" href="form.html">Подбор программы</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="main">
@@ -34,17 +37,19 @@
 
     <section class="tile">
       <div class="container">
-        <div class="tile__card">
-          <h2 class="tile__title">Похудение</h2>
-          <p class="tile__subtitle">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
-            на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="tile__link" href="">Каталог Slim</a>
-        </div>
-        <div class="tile__card">
-          <h2 class="tile__title">Набор массы</h2>
-          <p class="tile__subtitle">Заработать авторитет среди дворовых котов и даже собак? Серия
-            Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="tile__link" href="">Каталог Pro</a>
+        <div class="tile__list">
+          <div class="tile__card">
+            <h2 class="tile__title">Похудение</h2>
+            <p class="tile__subtitle">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
+              на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="tile__link" href="">Каталог Slim</a>
+          </div>
+          <div class="tile__card">
+            <h2 class="tile__title">Набор массы</h2>
+            <p class="tile__subtitle">Заработать авторитет среди дворовых котов и даже собак? Серия
+              Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="tile__link" href="">Каталог Pro</a>
+          </div>
         </div>
       </div>
     </section>
@@ -69,7 +74,8 @@
       <div class="container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+          по
           16 часов в день.</p>
         <div class="example__result">
           <dl class="example__result-item">
@@ -103,20 +109,23 @@
     </div>
     <div class="map__panel"><iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad548a777fe29b6fe3e02689a99d7d4d2146ceb5eaa612ce304c7f280ecb05635&amp;source=constructor"
-        width="320" height="362" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe></div>
+        width="320" height="362" allowfullscreen
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe></div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <a class="footer__logo">Cat Energy</a>
-      <div class="social">
-        <a href="social__link">vk</a>
-        <a href="social__link">instagram</a>
-        <a href="social__link">fb</a>
-      </div>
-      <div class="copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Ссылка на Академию</a>
+      <div class="footer__wrapper">
+        <a class="footer__logo">Cat Energy</a>
+        <div class="social">
+          <a href="social__link">vk</a>
+          <a href="social__link">instagram</a>
+          <a href="social__link">fb</a>
+        </div>
+        <div class="copyright">
+          <p class="copyright__text">HTML Academy</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Ссылка на Академию</a>
+        </div>
       </div>
     </div>
   </footer>

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
@@ -11,16 +12,18 @@
 
 <body class="body">
   <header class="header">
-    <a class="header__logo">Cat Energy</a>
-    <nav class="nav">
-      <button class="nav__toggle nav__toggle--closed nav__toggle--nojs" type="button"
-        aria-label="Открыть меню"></button>
-      <div class="nav-list">
-        <a class="nav-list__item" href="index.html">Главная</a>
-        <a class="nav-list__item" href="catalog.html">Каталог продукции</a>
-        <a class="nav-list__item nav-list__item--active" href="form.html">Подбор программы</a>
-      </div>
-    </nav>
+    <div class="container">
+      <a class="header__logo">Cat Energy</a>
+      <nav class="nav">
+        <button class="nav__toggle nav__toggle--closed nav__toggle--nojs" type="button"
+          aria-label="Открыть меню"></button>
+        <div class="nav-list">
+          <a class="nav-list__item" href="index.html">Главная</a>
+          <a class="nav-list__item" href="catalog.html">Каталог продукции</a>
+          <a class="nav-list__item nav-list__item--active" href="form.html">Подбор программы</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="main">
@@ -93,7 +96,7 @@
           <label class="form__label" for="vitamins">Витамины</label>
         </fieldset>
         <div class="form__button-wrapper">
-          <button class="button" type="submit">Отравить заявку</button>
+          <button class="button button--submit" type="submit">Отправить заявку</button>
           <span class="form__notification">* — обязательные поля</span>
         </div>
       </form>
@@ -113,15 +116,17 @@
 
   <footer class="footer">
     <div class="container">
-      <a class="footer__logo">Cat Energy</a>
-      <div class="social">
-        <a href="social__link">vk</a>
-        <a href="social__link">instagram</a>
-        <a href="social__link">fb</a>
-      </div>
-      <div class="copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Ссылка на Академию</a>
+      <div class="footer__wrapper">
+        <a class="footer__logo">Cat Energy</a>
+        <div class="social">
+          <a href="social__link">vk</a>
+          <a href="social__link">instagram</a>
+          <a href="social__link">fb</a>
+        </div>
+        <div class="copyright">
+          <p class="copyright__text">HTML Academy</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Ссылка на Академию</a>
+        </div>
       </div>
     </div>
   </footer>
