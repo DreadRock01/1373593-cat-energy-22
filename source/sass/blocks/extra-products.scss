@@ -1,3 +1,31 @@
+.extra-products__wrapper {
+  @media #{$media-lg} {
+    display: flex;
+  }
+}
+
+.extra-products__list {
+  @media #{$media-md} {
+    padding: 20px 40px;
+    margin-bottom: 70px;
+  }
+
+  @media #{$media-lg} {
+    width: 895px;
+    padding: inherit;
+    margin-bottom: inherit;
+    margin-right: 80px;
+  }
+}
+
+.extra-products__item {
+  @media #{$media-lg} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .extra-products__profit {
   color: $basic-white;
   background-color: $basic-green;
@@ -5,19 +33,27 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  margin: 0;
 }
 
 .extra-products__legend {
+  margin: 0;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
 }
 
 .extra-products__title {
+  margin: 0;
   color: $special-light-black;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+
+  @media #{$media-md} {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extra-products__cell {

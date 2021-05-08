@@ -13,5 +13,10 @@ $border-grey: #e7e7e7;
 $main-font: "Oswald", "Arial", sans-serif;
 $add-font: "Arial", sans-serif;
 
+$mobile: 320px;
 $tablet: 768px;
 $desktop: 1440px;
+
+$media-sm: screen and (min-width: $mobile);
+$media-md: screen and (min-width: $tablet);
+$media-lg: screen and (min-width: $desktop);

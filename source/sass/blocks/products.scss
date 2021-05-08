@@ -1,9 +1,43 @@
+.products {
+  @media #{$media-md} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  @media #{$media-lg} {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+  }
+}
+
+.products__item {
+  @media #{$media-md} {
+    background-color: $basic-grey;
+
+    &:last-child {
+      background-color: inherit;
+    }
+  }
+}
+
 .products__title {
+  margin: 0;
   color: $special-light-black;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media #{$media-lg} {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media #{$media-lg} {
+    line-height: 21px;
+  }
 }
 
 // .products__data {

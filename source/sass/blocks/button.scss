@@ -23,18 +23,34 @@
   &:active {
     color: rgba($basic-white, 0.3);
   }
-}
 
-.button--all {
-  color: $basic-black;
-  background-color: $basic-grey;
+  &--all {
+    color: $basic-black;
+    background-color: $basic-grey;
 
-  &:hover {
-    background-color: $special-grey;
+    &:hover {
+      background-color: $special-grey;
+    }
+
+    &:active {
+      color: $basic-black;
+      opacity: 0.5;
+    }
   }
 
-  &:active {
-    color: $basic-black;
-    opacity: 0.5;
+  &--submit {
+    @media #{$media-md} {
+      max-width: 282px;
+    }
+
+    @media #{$media-lg} {
+      max-width: 568px;
+    }
+  }
+
+  &--order {
+    @media #{$media-lg} {
+      max-width: 244px;
+    }
   }
 }

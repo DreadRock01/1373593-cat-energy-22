@@ -1,3 +1,24 @@
+.advantages__title {
+  @include example-title;
+}
+
 .advantages__item {
   @include index-subtitle;
+
+  @media #{$media-md} {
+    width: 230px;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+
+  @media #{$media-md} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media #{$media-lg} {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
