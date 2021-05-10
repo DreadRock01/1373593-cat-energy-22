@@ -39,8 +39,11 @@
   }
 
   &--submit {
+    margin-bottom: 20px;
+
     @media #{$media-md} {
       max-width: 282px;
+      margin-bottom: inherit;
     }
 
     @media #{$media-lg} {
