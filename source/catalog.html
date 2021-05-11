@@ -12,7 +12,7 @@
 
 <body class="body">
   <header class="header">
-    <div class="container">
+    <div class="container container--header">
       <a class="header__logo">Cat Energy</a>
       <nav class="nav">
         <button class="nav__toggle nav__toggle--closed nav__toggle--nojs" type="button"
@@ -237,15 +237,18 @@
     </div>
   </main>
 
-  <section class="map">
+  <section class="map map--inner">
     <div class="container">
-      <div class="map__info map__info--inner">
+      <div class="map__info map__info--desktop">
         <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span class="map__address-city">Санкт-Петербург</span>
         </p>
       </div>
     </div>
-    <div class="map-panel"></div>
+    <div class="map__panel"><iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad548a777fe29b6fe3e02689a99d7d4d2146ceb5eaa612ce304c7f280ecb05635&amp;source=constructor"
+        width="320" height="362" allowfullscreen
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe></div>
   </section>
 
   <footer class="footer">
