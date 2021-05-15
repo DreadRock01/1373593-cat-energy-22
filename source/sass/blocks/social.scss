@@ -1,0 +1,14 @@
+.social {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 23px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid $special-light-grey;
+
+  @media #{$media-md} {
+    width: inherit;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}

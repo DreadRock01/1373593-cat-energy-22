@@ -13,7 +13,7 @@
 <body class="body">
   <header class="header">
     <div class="container container--header">
-      <a class="header__logo">Cat Energy</a>
+      <a class="header__logo" href="index.html">Cat Energy</a>
       <nav class="nav">
         <button class="nav__toggle nav__toggle--closed nav__toggle--nojs" type="button"
           aria-label="Открыть меню"></button>
@@ -27,7 +27,7 @@
   </header>
 
   <main class="main">
-    <div class="container">
+    <div class="container container--special">
       <section class="hero hero--inside">
         <h1 class="hero__title">Подбор программы</h1>
         <p class="hero__subtitle hero__subtitle--form">Заполните анкету, и мы подберем программу питания для вашего кота
@@ -36,19 +36,19 @@
     </div>
 
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="container">
+      <div class="container container--special">
         <div class="form__inner">
           <fieldset class="form__fieldset form__fieldset--name">
             <div class="form__input-box">
-              <label class="form__label" for="name">Имя*:</label>
+              <label class="form__label form__label--name" for="name">Имя*:</label>
               <input class="form__text" id="name" name="data-name" type="text" placeholder="Барсик" required>
             </div>
             <div class="form__input-box">
-              <label class="form__label" for="weight">Вес (кг):</label>
+              <label class="form__label form__label--name" for="weight">Вес (кг):</label>
               <input class="form__text" id="weight" name="data-weight" type="text" placeholder="7" required>
             </div>
             <div class="form__input-box">
-              <label class="form__label" for="age">Возраст (лет):</label>
+              <label class="form__label form__label--name" for="age">Возраст (лет):</label>
               <input class="form__text" id="age" name="data-age" type="text" placeholder="7">
             </div>
           </fieldset>
@@ -68,12 +68,12 @@
             <h2 class="form__legend">Контактные данные (владельца кота):</h2>
             <div class="form__contact">
               <div class="form__input-box form__input-box--email">
-                <label class="form__label" for="email">E-mail*:</label>
+                <label class="form__label form__label--contact" for="email">E-mail*:</label>
                 <input class="form__text form__text--mail" type="email" id="email" name="data-email"
                   placeholder="Введите e-mail" required>
               </div>
               <div class="form__input-box form__input-box--tel">
-                <label class="form__label" for="tel">Телефон*:</label>
+                <label class="form__label form__label--contact" for="tel">Телефон*:</label>
                 <input class="form__text form__text--tel" type="tel" id="tel" name="data-tel"
                   placeholder="Введите телефон" required>
               </div>
@@ -113,7 +113,7 @@
   </main>
 
   <section class="map map--inner">
-    <div class="container">
+    <div class="container  container--map">
       <div class="map__info map__info--desktop">
         <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span class="map__address-city">Санкт-Петербург</span>
@@ -142,6 +142,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

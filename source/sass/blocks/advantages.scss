@@ -1,12 +1,18 @@
 .advantages__title {
   @include example-title;
+  margin-bottom: 40px;
+
+  @media #{$media-md} {
+    margin-bottom: 60px;
+  }
 }
 
 .advantages__item {
   @include index-subtitle;
+  margin-bottom: 25px;
 
   @media #{$media-md} {
-    width: 230px;
+    width: 250px;
   }
 }
 
@@ -16,6 +22,8 @@
   @media #{$media-md} {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 59px;
+    row-gap: 100px;
   }
 
   @media #{$media-lg} {

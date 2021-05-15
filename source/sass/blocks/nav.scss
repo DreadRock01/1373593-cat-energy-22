@@ -1,9 +1,18 @@
 .nav {
   position: relative;
+
+  @media #{$media-md} {
+    margin-top: 23px;
+  }
 }
 
 .nav__toggle {
   position: absolute;
   cursor: pointer;
   outline: none;
+  right: 20px;
+  top: -45px;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
 }
