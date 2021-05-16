@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+    margin-bottom: 70px;
   }
 
   @media #{$media-lg} {
@@ -13,11 +14,47 @@
 }
 
 .products__item {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 50px 65px;
+  margin-bottom: 25px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: $special-light-grey;
+    margin-left: calc((280px - 100vw) / 2);
+
+    @media #{$media-md} {
+      display: none;
+    }
+  }
+
   @media #{$media-md} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
     background-color: $basic-grey;
+    padding: 38px;
 
     &:last-child {
       background-color: inherit;
+    }
+  }
+
+  &--more {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+
+    @media #{$media-md} {
+      border: 2px solid $basic-grey;
     }
   }
 }
@@ -28,34 +65,66 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  width: 80px;
   text-transform: uppercase;
 
-  @media #{$media-lg} {
+  @media #{$media-md} {
     font-size: 20px;
     line-height: 24px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   @media #{$media-lg} {
     line-height: 21px;
   }
+
+  &--more {
+    width: inherit;
+    text-align: center;
+  }
 }
 
-// .products__data {
-//   font-family: $add-font;
-//   color: $special-dark-grey;
-//   font-size: 16px;
-//   line-height: 20px;
-//   font-weight: 400;
+.products__link-title {
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
 
-//   &--th {
-//     font-weight: 400;
-//   }
-// }
+.products__description {
+  border-collapse: collapse;
+
+  @media #{$media-md} {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.products__data {
+  @media #{$media-md} {
+    border-bottom: 1px solid $special-border-grey;
+  }
+}
 
 .products__data-cell {
   font-family: $add-font;
   color: $special-dark-grey;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
   font-weight: 400;
+  text-align: left;
+  padding: 0;
+
+  &:last-child {
+    text-align: right;
+  }
+
+  @media #{$media-md} {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  &--more {
+    text-align: center;
+  }
 }
