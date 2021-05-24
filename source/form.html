@@ -13,7 +13,14 @@
 <body class="body">
   <header class="header">
     <div class="container container--header">
-      <a class="header__logo" href="index.html">Cat Energy</a>
+      <a class="header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__img" src="img/logo-mobile.svg" width="191" height="38"
+            alt="Логотип интернет-магазина">
+        </picture>
+      </a>
       <nav class="nav">
         <button class="nav__toggle nav__toggle--closed nav__toggle--nojs" type="button"
           aria-label="Открыть меню"></button>
@@ -27,16 +34,12 @@
   </header>
 
   <main class="main">
-    <div class="container container--special">
-      <section class="hero hero--inside">
-        <h1 class="hero__title">Подбор программы</h1>
-        <p class="hero__subtitle hero__subtitle--form">Заполните анкету, и мы подберем программу питания для вашего кота
-        </p>
-      </section>
-    </div>
 
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="container container--special">
+        <h1 class="heading heading--form">Подбор программы</h1>
+        <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
         <div class="form__inner">
           <fieldset class="form__fieldset form__fieldset--name">
             <div class="form__input-box">
@@ -65,7 +68,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--contact">
-            <h2 class="form__legend">Контактные данные (владельца кота):</h2>
+            <h2 class="form__legend">Контактные данные (владельца кота)</h2>
             <div class="form__contact">
               <div class="form__input-box form__input-box--email">
                 <label class="form__label form__label--contact" for="email">E-mail*:</label>
@@ -87,7 +90,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--checkbox">
-            <h2 class="form__legend"><span class="form__legend-text">Дополнительно:</span></h2>
+            <h2 class="form__legend"><span class="form__legend-text">Дополнительно</span></h2>
             <div class="form__checkbox">
               <input class="form__input-checkbox visually-hidden" tabindex="0" type="checkbox" name="extra-sugar"
                 id="sugar" checked>
@@ -129,7 +132,8 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <a class="footer__logo">Cat Energy</a>
+        <a class="footer__logo"><img class="footer-info__img" src="img/footer-logo.svg" width="128" height="23"
+            alt="Логотип интернет-магазина"></a>
         <div class="social">
           <a href="social__link">vk</a>
           <a href="social__link">instagram</a>

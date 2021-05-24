@@ -1,46 +1,83 @@
 .hero {
+  position: relative;
   color: $basic-white;
   background-color: $basic-green;
   margin-bottom: 22px;
+  min-height: 302px;
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), url("../img/cat-background-mobile.jpg"), linear-gradient(to right, #4f4e53, #444448);
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/product-mobile.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 270px;
+    width: 280px;
+    transform: translate(-50%);
+    left: 50%;
+    bottom: 40px;
+
+    @media #{$media-md} {
+      position: relative;
+      background-image: url("../img/product-tablet.png");
+      height: 709px;
+      width: 609px;
+      bottom: 0;
+      top: -185px;
+      z-index: -1;
+    }
+
+    @media #{$media-lg} {
+      position: absolute;
+      background-image: url("../img/product-desktop.png");
+      height: 552px;
+      width: 499px;
+      top: 0;
+      left: 58%;
+      z-index: 1;
+    }
+  }
 
   @media #{$media-md} {
+    color: $basic-black;
+    background-image: none;
+    background-color: inherit;
+    padding-top: 60px;
     margin-bottom: 0;
   }
 
   @media #{$media-lg} {
+    background-image: linear-gradient(to right, $basic-white 50%, rgba($basic-green, 0.85) 50%), url("../img/cat-background-desktop.jpg"), linear-gradient(to right, #4f4e53, #444448);
+    background-position: right bottom;
+    min-height: 572px;
     margin-bottom: 80px;
   }
-
-  &--inside {
-    text-align: inherit;
-    color: $basic-black;
-    background-color: $basic-white;
-    margin-top: 25px;
-    margin-bottom: 40px;
-
-    @media #{$media-md} {
-      margin-top: 65px;
-      margin-bottom: 65px;
-    }
-  }
-
-  // @media (min-width: $tablet) {
-  //   color: $basic-black;
-  // }
 }
 
 .hero__title {
+  padding-top: 25px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
 
-  // @media (min-width: $tablet) {
-  //   font-size: 60px;
-  //   line-height: 60px;
-  // }
+  @media #{$media-md} {
+    text-align: left;
+    background-image: none;
+    background-color: inherit;
+    font-size: 60px;
+    line-height: 60px;
+    width: 414px;
+    padding-top: 0;
+    margin-left: 80px;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__subtitle {
@@ -48,14 +85,13 @@
   line-height: 14px;
   font-weight: 400;
   margin: 0;
+  margin-left: 80px;
   text-transform: uppercase;
 
-  // @media (min-width: $tablet) {
-  //   font-size: 20px;
-  //   line-height: 20px;
-  // }
-
-  &--form {
-    line-height: 18px;
+  @media (min-width: $tablet) {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
   }
 }

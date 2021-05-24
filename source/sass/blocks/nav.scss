@@ -10,9 +10,21 @@
   position: absolute;
   cursor: pointer;
   outline: none;
-  right: 20px;
-  top: -45px;
+  border: none;
+  right: 3px;
+  top: -37px;
   z-index: 2;
   width: 22px;
   height: 22px;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  @media #{$media-md} {
+    display: none;
+  }
+
+  &--closed {
+    background-image: url("../img/burger.svg");
+  }
 }

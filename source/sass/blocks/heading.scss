@@ -1,0 +1,18 @@
+.heading {
+  color: $basic-black;
+  background-color: $basic-white;
+  margin: 0;
+  margin-bottom: 37px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+
+  &--catalog {
+    margin-bottom: 50px;
+  }
+
+  @media #{$media-md} {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

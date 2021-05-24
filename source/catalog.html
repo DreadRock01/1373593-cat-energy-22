@@ -13,7 +13,14 @@
 <body class="body">
   <header class="header">
     <div class="container container--header">
-      <a class="header__logo" href="index.html">Cat Energy</a>
+      <a class="header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__img" src="img/logo-mobile.svg" width="191" height="38"
+            alt="Логотип интернет-магазина">
+        </picture>
+      </a>
       <nav class="nav">
         <button class="nav__toggle nav__toggle--closed nav__toggle--nojs" type="button"
           aria-label="Открыть меню"></button>
@@ -28,11 +35,16 @@
 
   <main class="main">
     <div class="container">
-      <section class="hero hero--inside">
-        <h1 class="hero__title">Каталог продукции</h1>
-      </section>
+      <h1 class="heading heading--catalog">Каталог продукции</h1>
       <section class="products">
         <article class="products__item">
+          <a class="products__link-img" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/product-500-chicken-tablet.png" width="161" height="172">
+              <img class="products__img" src="img/product-500-chicken-mobile.png" width="68" height="86"
+                alt="Логотип интернет-магазина">
+            </picture>
+          </a>
           <a class="products__link-title" href="#">
             <h2 class="products__title">Cat energy pro 500 г</h2>
           </a>
@@ -54,6 +66,14 @@
           <a class="button button--order-first" href="">Заказать</a>
         </article>
         <article class="products__item">
+          <a class="products__link-img" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/product-1000-chicken-tablet.png" width="172" height="201">
+              <source media="(min-width: 768px)" srcset="img/product-1000-chicken-tablet.png" width="168" height="206">
+              <img class="products__img" src="img/product-1000-chicken-mobile.png" width="84" height="100"
+                alt="Логотип интернет-магазина">
+            </picture>
+          </a>
           <a class="products__link-title" href="#">
             <h2 class="products__title">Cat energy pro 1000 г</h2>
           </a>
@@ -75,6 +95,13 @@
           <a class="button button--order-first" href="">Заказать</a>
         </article>
         <article class="products__item">
+          <a class="products__link-img" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/product-500-fish-tablet.png" width="163" height="174">
+              <img class="products__img" src="img/product-500-fish-mobile.png" width="68" height="78"
+                alt="Логотип интернет-магазина">
+            </picture>
+          </a>
           <a class="products__link-title" href="#">
             <h2 class="products__title">Cat energy pro 500 г</h2>
           </a>
@@ -96,6 +123,14 @@
           <a class="button button--order-first" href="">Заказать</a>
         </article>
         <article class="products__item">
+          <a class="products__link-img" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/product-1000-fish-tablet.png" width="172" height="196">
+              <source media="(min-width: 768px)" srcset="img/product-1000-fish-tablet.png" width="168" height="200">
+              <img class="products__img" src="img/product-1000-fish-mobile.png" width="84" height="101"
+                alt="Логотип интернет-магазина">
+            </picture>
+          </a>
           <a class="products__link-title" href="#">
             <h2 class="products__title">Cat energy pro 1000 г</h2>
           </a>
@@ -117,6 +152,14 @@
           <a class="button button--order-first" href="">Заказать</a>
         </article>
         <article class="products__item">
+          <a class="products__link-img" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/product-500-buckwheat-tablet.png">
+              <source media="(min-width: 768px)" srcset="img/product-500-buckwheat-tablet.png" width="161" height="171">
+              <img class="products__img" src="img/product-500-buckwheat-mobile.png" width="68" height="78"
+                alt="Cat Energy PRO 500 г с гречкой">
+            </picture>
+          </a>
           <a class="products__link-title" href="#">
             <h2 class="products__title">Cat energy slim 500 г</h2>
           </a>
@@ -138,6 +181,14 @@
           <a class="button button--order-first" href="">Заказать</a>
         </article>
         <article class="products__item">
+          <a class="products__link-img" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/product-500-buckwheat-tablet.png" width="172" height="196">
+              <source media="(min-width: 768px)" srcset="img/product-1000-buckwheat-tablet.png" width="168" height="200">
+              <img class="products__img" src="img/product-1000-buckwheat-mobile.png" width="84" height="100"
+                alt="Cat Energy PRO 1000 г с гречкой">
+            </picture>
+          </a>
           <a class="products__link-title" href="#">
             <h2 class="products__title">Cat energy slim 1000 г</h2>
           </a>
@@ -159,6 +210,13 @@
           <a class="button button--order-first" href="">Заказать</a>
         </article>
         <article class="products__item">
+          <a class="products__link-img" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/product-500-rice-tablet.png" width="163" height="174">
+              <img class="products__img" src="img/product-500-rice-mobile.png" width="72" height="84"
+                alt="Cat Energy PRO 500 г с рисом">
+            </picture>
+          </a>
           <a class="products__link-title" href="#">
             <h2 class="products__title">Cat energy slim 500 г</h2>
           </a>
@@ -231,7 +289,7 @@
               <a class="button button--order-second" href="">Заказать</a>
             </article>
           </div>
-          <p class="extra-products__profit">Закажите всё и получите чехол для кота в подарок!</p>
+          <p class="extra-products__profit">Закажите всё и&nbsp;получите чехол для<br> кота в подарок!</p>
         </div>
       </section>
     </div>
@@ -254,7 +312,8 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <a class="footer__logo">Cat Energy</a>
+        <a class="footer__logo"><img class="footer-info__img" src="img/footer-logo.svg" width="128" height="23"
+            alt="Логотип интернет-магазина"></a>
         <div class="social">
           <a href="social__link">vk</a>
           <a href="social__link">instagram</a>

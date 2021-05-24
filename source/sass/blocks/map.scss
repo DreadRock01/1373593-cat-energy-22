@@ -14,6 +14,7 @@
   font-weight: 400;
   color: $special-black;
   text-transform: uppercase;
+  margin: 0;
 
   @media #{$media-md} {
     font-size: 20px;
@@ -76,6 +77,15 @@
 }
 
 .map__panel {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
   iframe {
     border: none;
     width: 100%;

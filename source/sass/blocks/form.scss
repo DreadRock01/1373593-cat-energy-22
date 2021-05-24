@@ -7,6 +7,19 @@
   }
 }
 
+.form__description {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media #{$media-md} {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .form__inner {
   @media #{$media-lg} {
     display: grid;
@@ -177,6 +190,12 @@
 }
 
 .form__text {
+  padding: 13px 15px;
+
+  @media #{$media-md} {
+    padding: 10px 19px;
+  }
+
   &--mail {
     @media #{$media-lg} {
       width: 486px;

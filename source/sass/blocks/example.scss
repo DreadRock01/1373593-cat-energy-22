@@ -39,6 +39,14 @@
     width: inherit;
     font-size: 20px;
   }
+
+  @media #{$media-lg} {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+  }
 }
 
 .example__result-item {
@@ -55,12 +63,17 @@
 
     @media #{$media-md} {
       margin-right: 42px;
+      width: 162px;
     }
+  }
+
+  @media #{$media-md} {
+    width: 162px;
   }
 
   &:nth-child(2) {
     @media #{$media-md} {
-      margin-right: 244px;
+      margin-right: 168px;
     }
   }
 }
@@ -81,6 +94,20 @@
 
   @media #{$media-md} {
     top: 60px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $basic-white;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    max-width: 130px;
+    padding: 0 5px;
+  }
+}
+
+.example__result-amount {
+  @media #{$media-lg} {
+    margin-left: 60px;
   }
 }
 
@@ -113,4 +140,8 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.example__slider-controls {
+  text-align: center;
 }

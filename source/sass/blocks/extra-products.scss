@@ -66,6 +66,7 @@
 }
 
 .extra-products__profit {
+  position: relative;
   color: $basic-white;
   background-color: $basic-green;
   font-family: $add-font;
@@ -73,9 +74,45 @@
   line-height: 20px;
   font-weight: 400;
   margin: 0;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url("../img/gift-mobile.jpg");
+  height: 289px;
+  padding-top: 185px;
+  padding-left: 48px;
+  padding-right: 48px;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 78px;
+    height: 80px;
+    top: 60px;
+    left: 100px;
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  @media (min-width: $tablet) and (max-width: 1439px) {
+    height: 200px;
+    background-image: url("../img/gift-tablet.jpg");
+    padding-top: 85px;
+
+    &::before {
+      top: 60px;
+      left: 80px;
+    }
+  }
 
   @media #{$media-lg} {
     width: 245px;
+    background-image: url("../img/gift-desktop.jpg");
+    padding-left: 42px;
+    padding-right: 42px;
+
+    &::before {
+      left: 80px;
+    }
   }
 }
 
